@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>desk</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/v2.4.2/dist/altspace.min.js"></script>
+  </head>
+  <body>
+    <a-scene altspace="fullspace: false">
+      <a-assets>
+        <a-asset-item id="desk" src="desk.dae"></a-asset-item>
+        </a-assets>
+      <a-entity collada-model="#desk" light="type: ambient; color: #CCC" position="0 2 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
