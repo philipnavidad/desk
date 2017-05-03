@@ -8,9 +8,13 @@
     <a-scene altspace="fullspace: true">
       <a-assets>
         <a-asset-item id="desk" src="desk.dae"></a-asset-item>
-        </a-assets>
+				<a-asset-item id="avatar1-mtl" src="Rubenoid_MaleGeneric_1.mtl"></a-asset-item>
+    		<a-asset-item id="avatar1-obj" src="Rubenoid_MaleGeneric_1.obj"></a-asset-item>
+				<a-asset-item id="avatar2-mtl" src="Rubenoid_MaleGeneric_2.mtl"></a-asset-item>
+    		<a-asset-item id="avatar2-obj" src="Rubenoid_MaleGeneric_2.obj"></a-asset-item>
+      </a-assets>
       <a-entity collada-model="#desk" light="type: ambient; color: #CCC" position="10.5 -0.8 6" scale="0.8 0.8 0.8"></a-entity>
-	    <a-entity position="8 0 7" rotation="0 -45 0" n-portal="targetEntity: #court"></a-entity>
+			<a-entity position="8 0 7" rotation="0 -45 0" n-portal="targetEntity: #court"></a-entity>
       <a-entity id="court" position="-23 0 0" rotation="0 90 0"></a-entity>
       <a-entity position="-21 0 0" rotation="0 -45 0" n-portal="targetEntity: #stage"></a-entity>
       <a-entity id="stage" position="0 0 0" rotation="0 90 0"></a-entity>
